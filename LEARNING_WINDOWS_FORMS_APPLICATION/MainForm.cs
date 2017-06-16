@@ -27,7 +27,7 @@
 			//}
 			//else
 			//{
-			//	System.Windows.Forms.MessageBox.Show("Note: [sender] is not Button!");
+			//	System.Windows.Forms.MessageBox.Show("Note: [sender] is not a Button!");
 
 			//	return;
 			//}
