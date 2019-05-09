@@ -27,7 +27,11 @@
 			// **************************************************
 			//switch(sender.Name)
 			//{
-
+			//	case "button1":
+			//	{
+			//		System.Windows.Forms.MessageBox.Show("Hello, World (1)!");
+			//		break;
+			//	}
 			//}
 			// **************************************************
 
@@ -40,18 +44,22 @@
 			// /Solution (1)
 
 			// Solution (2)
-			//System.Windows.Forms.Button currentButton = null;
-
 			//if (sender is System.Windows.Forms.Button)
 			//{
-			//	currentButton =
-			//		(System.Windows.Forms.Button)sender;
+			//	System.Windows.Forms.Button currentButton = (System.Windows.Forms.Button)sender;
+
+			//	switch (currentButton.Name)
+			//	{
+			//		case "button1":
+			//		{
+			//			System.Windows.Forms.MessageBox.Show("Hello, World (1)!");
+			//			break;
+			//		}
+			//	}
 			//}
 			//else
 			//{
 			//	System.Windows.Forms.MessageBox.Show("Note: [sender] is not a Button!");
-
-			//	return;
 			//}
 			// /Solution (2)
 
@@ -59,46 +67,46 @@
 			System.Windows.Forms.Button
 				currentButton = sender as System.Windows.Forms.Button;
 
-			if (currentButton == null)
+			if (currentButton != null)
+			{
+				switch (currentButton.Name)
+				{
+					case "button1":
+					{
+						System.Windows.Forms.MessageBox.Show("Hello, World (1)!");
+						break;
+					}
+
+					case "button2":
+					{
+						System.Windows.Forms.MessageBox.Show("Hello, World (2)!");
+						break;
+					}
+
+					case "button3":
+					{
+						System.Windows.Forms.MessageBox.Show("Hello, World (3)!");
+						break;
+					}
+
+					case "button4":
+					{
+						System.Windows.Forms.MessageBox.Show("Hello, World (4)!");
+						break;
+					}
+
+					case "button5":
+					{
+						System.Windows.Forms.MessageBox.Show("Hello, World (5)!");
+						break;
+					}
+				}
+			}
+			else
 			{
 				System.Windows.Forms.MessageBox.Show("Note: [sender] is not Button!");
-
-				return;
 			}
 			// /Solution (3)
-
-			switch (currentButton.Name)
-			{
-				case "button1":
-				{
-					System.Windows.Forms.MessageBox.Show("Hello, World (1)!");
-					break;
-				}
-
-				case "button2":
-				{
-					System.Windows.Forms.MessageBox.Show("Hello, World (2)!");
-					break;
-				}
-
-				case "button3":
-				{
-					System.Windows.Forms.MessageBox.Show("Hello, World (3)!");
-					break;
-				}
-
-				case "button4":
-				{
-					System.Windows.Forms.MessageBox.Show("Hello, World (4)!");
-					break;
-				}
-
-				case "button5":
-				{
-					System.Windows.Forms.MessageBox.Show("Hello, World (5)!");
-					break;
-				}
-			}
 		}
 	}
 }
