@@ -39,6 +39,7 @@
 			// دکمه جاری که بر روی آن کلیک کرده‌ایم
 
 			// Solution (1)
+			// روش احمقانه
 			//System.Windows.Forms.Button
 			//	currentButton = (System.Windows.Forms.Button)sender;
 			// /Solution (1)
@@ -46,7 +47,8 @@
 			// Solution (2)
 			//if (sender is System.Windows.Forms.Button)
 			//{
-			//	System.Windows.Forms.Button currentButton = (System.Windows.Forms.Button)sender;
+			//	System.Windows.Forms.Button
+			//		currentButton = (System.Windows.Forms.Button)sender;
 
 			//	switch (currentButton.Name)
 			//	{
